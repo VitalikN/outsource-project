@@ -7,10 +7,6 @@ const Cases = () => {
   return (
     <section className={styles.section} id="Cases">
       <div className={styles.container}>
-        <div
-          className={styles.hero__overley}
-          style={{ height: `${dynamicHeight}px` }}
-        ></div>
         <h2
           className={`${styles.title} ${oswald.className} ${styles.title__cases} `}
         >
@@ -25,6 +21,10 @@ const Cases = () => {
           you can focus on growing your business. We are here to help you every
           step of the way.
         </p>
+        <div
+          className={styles.hero__overley}
+          style={{ height: `${dynamicHeight}px` }}
+        ></div>
       </div>
     </section>
   );
