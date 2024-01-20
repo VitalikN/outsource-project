@@ -1,0 +1,32 @@
+@import "../utils/container.scss";
+@import "../utils/mixins";
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.logo {
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+.logoContainer:focus .logo__chip,
+.logoContainer:hover .logo__chip {
+  color: var(--color-hover);
+}
+.logo__chip {
+  color: var(--color-text);
+  @include font(33px, 500, 40px);
+  letter-spacing: -1.32px;
+  transition: all 0.3s ease;
+}
+.chipContainer {
+  @include font(10px, 400, 9px);
+  letter-spacing: -0.4px;
+  width: 60px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+.logo__color {
+  color: var(--color-hover);
+}

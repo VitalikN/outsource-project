@@ -1,0 +1,179 @@
+@import "../utils/container.scss";
+@import "../utils/mixins";
+
+.section {
+  padding-top: 36px;
+  @include tablet {
+    padding-top: 100px;
+  }
+  @include desktop {
+    padding-top: 120px;
+  }
+}
+.mainCompany__container__title {
+  @include tablet {
+    display: flex;
+    width: 708px;
+    margin: 0 auto;
+  }
+  @include desktop {
+    width: 100%;
+  }
+}
+.title {
+  color: var(--color-text);
+  @include font(28px, 400, 28px);
+
+  text-transform: uppercase;
+
+  @include tablet {
+    @include font(36px, 400, 36px);
+  }
+  @include desktop {
+    @include font(48px, 400, 48px);
+  }
+}
+.mainCompany__title {
+  margin-bottom: 24px;
+  @include tablet {
+    width: 272px;
+    margin-right: auto;
+  }
+  @include desktop {
+    width: 365px;
+  }
+}
+
+.chip::after {
+  @include tablet {
+    content: "";
+    display: flex;
+    height: 228px;
+    border-left: var(--border);
+  }
+  @include desktop {
+    height: 171px;
+  }
+}
+.mainCompany__text {
+  color: var(--color-text);
+
+  // text-align: justify;
+  font-size: 16px;
+
+  font-weight: 400;
+
+  letter-spacing: -0.64px;
+  margin-bottom: 36px;
+  @include tablet {
+    width: 342px;
+    margin-left: 11px;
+    margin-bottom: 100px;
+  }
+  @include desktop {
+    width: 459px;
+    margin-left: 161px;
+    margin-bottom: 122px;
+  }
+}
+.mainCompany__list {
+  display: grid;
+  @include mobile_tablet {
+    grid-template:
+      "item1 item2" 1fr
+      "item5 item6" 1fr / 1fr 1fr;
+  }
+  grid-gap: 20px;
+  @include mobileMax {
+    justify-items: center;
+  }
+  @include tablet {
+    grid-template:
+      "item1 item2 item3 item3" auto
+      "item4 item4 item5 item6" auto / auto auto;
+    justify-content: center;
+  }
+  @include desktop {
+    grid-gap: 48px;
+  }
+}
+.item3 {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+.item4 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.mainCompany__item {
+  @include mobileMax {
+    display: none;
+  }
+}
+.mainCompany__list__item {
+  background: var(--background-cases);
+  padding: 10px;
+  @include mobileMax {
+    min-width: 140px;
+  }
+  @include tablet {
+    width: 159px;
+  }
+  @include desktop {
+    width: 274px;
+    padding: 48px 24px;
+  }
+}
+.mainCompany__list__item__box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 1px 0 33px 0;
+  border-bottom: var(--border);
+  margin-bottom: 12px;
+  @include tablet {
+    padding-bottom: 51px;
+  }
+}
+
+.mainCompany__svg {
+  @include desktop {
+    width: 24px;
+    height: 24px;
+  }
+}
+.mainCompany__list__item__title {
+  color: var(--color-text);
+  @include font(16px, 400, 24px);
+
+  text-transform: uppercase;
+  @include tablet {
+    @include font(18px, 400, 24px);
+
+    @include desktop {
+      @include font(32px, 400, 48px);
+    }
+  }
+}
+.mainCompany__list__item__text {
+  color: var(--color-text);
+
+  // text-align: justify;
+  font-size: 14px;
+
+  font-weight: 400;
+
+  letter-spacing: -0.56px;
+  @include desktop {
+    font-size: 16px;
+  }
+}
+.mainCompany__img {
+  width: 342px;
+  height: 255px;
+  @include desktop {
+    width: 596px;
+    height: 339px;
+  }
+}

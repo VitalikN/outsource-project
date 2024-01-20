@@ -1,0 +1,35 @@
+@import "../utils/container.scss";
+@import "../utils/mixins";
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  background: var(--background-body);
+  z-index: 10;
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.header__btn {
+  display: flex;
+  gap: 12px;
+}
+.header__display {
+  @include mobileMax {
+    display: none;
+  }
+}
