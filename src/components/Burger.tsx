@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "@/sass/layouts/burger.module.scss";
-import Link from "next/link";
 import { IoIosClose } from "react-icons/io";
 import { GoArrowUpRight } from "react-icons/go";
 

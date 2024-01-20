@@ -12,7 +12,9 @@ const Cases = () => {
         >
           Grow your global team. Employ the best talent, anywhere in the world
         </h2>
-        <p className={styles.mainCompany__list__item__text}>
+        <p
+          className={`${styles.mainCompany__list__item__text} ${styles.text__cases}`}
+        >
           The benefits of growing a global team and finding the best talent
           anywhere in the world are endless. It’s important to note that labour
           laws and regulations in Ukraine are strict with penalties for
