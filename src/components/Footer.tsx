@@ -38,8 +38,12 @@ const Footer = () => {
           >
             peoukraine.gmail.com
           </Link>
-          <Link href="#" className={`${styles.footer__link} ${styles.link3}`}>
-            Peoukraine &#169; 2023
+          <Link
+            target="_blank"
+            href="/"
+            className={`${styles.footer__link} ${styles.link3}`}
+          >
+            Peoukraine &#169; 2024
           </Link>
         </div>
       </div>

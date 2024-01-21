@@ -24,7 +24,7 @@ const Cases = () => {
           step of the way.
         </p>
         <div
-          className={styles.hero__overley}
+          className={styles.cases__overley}
           style={{ height: `${dynamicHeight}px` }}
         ></div>
       </div>

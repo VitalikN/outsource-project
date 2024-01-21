@@ -1,7 +1,7 @@
 "use client";
+import Image from "next/image";
 import { oswald } from "@/utils/fonts";
 import styles from "@/sass/layouts/mainCompany.module.scss";
-import Image from "next/image";
 
 const MainCompany = () => {
   return (
@@ -70,7 +70,7 @@ const MainCompany = () => {
           <li className={`${styles.mainCompany__item} ${styles.item3}`}>
             <Image
               className={styles.mainCompany__img}
-              src="/Screensho.png"
+              src="/kiev.jpeg"
               alt="Screensho"
               width="346"
               height="234"
@@ -80,7 +80,7 @@ const MainCompany = () => {
           <li className={`${styles.mainCompany__item} ${styles.item4}`}>
             <Image
               className={styles.mainCompany__img}
-              src="/Screensho.png"
+              src="/kharkov.jpeg"
               alt="vnv"
               width="346"
               height="234"
