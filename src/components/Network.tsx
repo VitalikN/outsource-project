@@ -10,12 +10,12 @@ const Network = () => {
         <Link
           className={styles.network__list__item__link}
           target="_blank"
-          href="mailto:peoukraine.gmail.com"
+          href="mailto:peoukraine@gmail.com"
         >
           <svg className={styles.network__social} width="24px" height="24px">
             <use href="/symbol-defs.svg#icon-sms"></use>
           </svg>
-          peoukraine.gmail.com
+          peoukraine@gmail.com
         </Link>
       </li>
     </ul>
