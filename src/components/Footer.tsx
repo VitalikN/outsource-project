@@ -36,7 +36,7 @@ const Footer = () => {
             target="_blank"
             href="mailto:peoukraine.gmail.com"
           >
-            peoukraine.gmail.com
+            peoukraine@gmail.com
           </Link>
           <Link
             target="_blank"
