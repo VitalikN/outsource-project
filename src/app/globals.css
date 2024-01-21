@@ -37,11 +37,6 @@ body {
   color: var(--color-text);
 }
 
-body::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   font-family: var(--font-mono);
