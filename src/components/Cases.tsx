@@ -20,7 +20,7 @@ const Cases = () => {
           regulations in Ukraine are strict with penalties for non-compliance.
           Let our team take care of the local employment solutions such as
           payroll, benefits, compliance, taxes, accounting, audit, recruitment,
-          and Employment of Record and admin so you can focus on growing your
+          Employment of Record and admin so you can focus on growing your
           business. We are here to help you every step of the way.
         </p>
         <div
