@@ -1,8 +1,12 @@
 @import "../utils/container.scss";
 @import "../utils/mixins";
 
+@include slideAnimation("animationLeft", "100%", "0", "0", "0", "0", "1");
 .burger__box {
+  opacity: 0;
   position: relative;
+
+  animation: animationLeft 1.2s ease forwards 0.5s;
 }
 .burger {
   cursor: pointer;
@@ -55,7 +59,13 @@
   backdrop-filter: blur(2px);
   z-index: 1;
 }
+
+@include slideAnimation("animation", "100%", "0", "0", "0", "0", "1");
 .menu {
+  opacity: 0;
+  animation: animation 1s ease forwards;
+  animation-delay: 0.5s;
+  transition: transform 0.5s ease;
   @include mobileMax {
     width: 280px;
   }
@@ -94,6 +104,7 @@
     width: 365px;
   }
 }
+
 .menu__box__icon__close {
   background: none;
   outline: none;
@@ -106,11 +117,13 @@
   font-weight: 400;
   letter-spacing: -0.64px;
   transition: all 0.3s ease;
+
   &:focus,
   &:hover {
     color: var(--color-hover);
   }
 }
+
 .menu__icon {
   color: var(--color-icon);
   font-size: 30px;
@@ -119,6 +132,7 @@
 .menu__box__icon__close:hover .menu__icon {
   color: var(--color-hover);
 }
+
 .menu__list {
   padding-top: 16px;
   display: flex;

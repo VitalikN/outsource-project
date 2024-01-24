@@ -1,7 +1,10 @@
 @import "../utils/container.scss";
 @import "../utils/mixins";
 
+@include slideAnimation("slideLogo", "-100%", "0", "0", "0", "0", "1");
+
 .logoContainer {
+  animation: slideLogo 1.7s ease forwards;
   display: flex;
   align-items: center;
   gap: 4px;

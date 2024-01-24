@@ -5,11 +5,11 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ title }) => (
-  <button type="button" className={styles.header__touch}>
+  <div className={styles.header__touch}>
     {title}
     <svg className={styles.header__touch__chip} width="14px" height="14px">
       <use href="/symbol-defs.svg#icon-arrow"></use>
     </svg>
-  </button>
+  </div>
 );
 export default Button;

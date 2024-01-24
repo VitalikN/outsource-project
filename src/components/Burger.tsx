@@ -17,13 +17,13 @@ const Burger = () => {
       <div className={styles.burger__box}>
         <div className={styles.burger} onClick={toggleMenu}>
           <button type="button" className={styles.burger__button}>
-            <div className={styles.line}></div>
-            <div className={styles.line}></div>
-            <div className={styles.line}></div>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
           </button>
         </div>
         {menuOpen && (
-          <div className={styles.menu}>
+          <div className={`${menuOpen ? styles.menu : ""}`}>
             <button
               type="button"
               className={styles.menu__box__icon__close}

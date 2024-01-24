@@ -1,7 +1,12 @@
 @import "../utils/container.scss";
 @import "../utils/mixins";
 
+@include slideAnimation("animationLeft", "100%", "0", "0", "0", "0", "1");
+
 .header__touch {
+  opacity: 0;
+  animation: animationLeft 1.2s ease forwards 0.3s;
+
   cursor: pointer;
   display: inline-flex;
   padding: 10px 16px;

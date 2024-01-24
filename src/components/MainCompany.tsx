@@ -15,15 +15,15 @@ const MainCompany = () => {
           </h2>
           <span className={styles.chip}></span>
           <p className={styles.mainCompany__text}>
-            Peoukraine provides global employment solutions and professional
-            employment organisation (PEO) services for companies looking to grow
-            and build out a global team in Ukraine. Traditional methods of
-            establishing global employment and subsidiaries in Ukraine typically
-            take months and can incur heavy costs. Peoukraine’s global
-            employment solutions and PEO services is helping hundreds of
-            organisations onboard new employees in Ukraine in a matter of days
-            with full compliance of local labour laws. We use a tech-forward
-            approach to streamline the process.
+            Peoukraine provides local employment solutions and professional
+            employment organization (PEO) services for companies looking to grow
+            and build out a local team in Ukraine. Traditional methods of
+            establishing local employment and subsidiaries in Ukraine typically
+            take months and can incur heavy costs. Peoukraine’s local employment
+            solutions and PEO services are helping hundreds of organizations
+            onboard new employees in Ukraine in a matter of days with full
+            compliance of local labor laws. We use a tech-forward approach to
+            streamline the process.
           </p>
         </div>
         <ul className={styles.mainCompany__list}>
